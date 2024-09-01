@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  padding: 1rem;
+  background-color: #e9f2f6;
+  font-family: 'Poppins', sans-serif;  
+}
+.App{
+  display: grid;
+  grid-template-rows: auto 1fr; /* Two rows: auto height for header, 1fr for the rest */
+  grid-template-columns: 1fr 1fr; /* Two columns: equally split */
+  grid-template-areas: 
+      "header header"
+      "details forecast";
+}
+
+.header {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 1160px;
+  height: 5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: header;
+}
+.forecast {
+  background-color: #ffffff;
+  height: 85vh;  /* Adjusted height for details and forecast */
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: forecast;
+  margin-top: 1rem;
+}
+.details {
+  background-color: #ffffff;
+  height: 85vh;  /* Adjusted height for details and forecast */
+  width: 95%;
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: details;
+  margin-top: 1rem;
+}
