@@ -19,7 +19,7 @@ const timeDisplay = () => {
     const hourDifference = currentHour - localHour;
     
     // Calculate the display hour by adjusting for the current time difference
-    const displayHour = localHour + hourDifference;
+    const displayHour = localHour + hourDifference; 
     
     // Format the time string for display
     const timeToDisplay = `${displayHour}:${localMinutes}`;
@@ -32,7 +32,10 @@ const localTime = weather && getTime()
 
   return (
     <div className='time'>
-      
+      {timeToDisplay}
+      <div className="localtime">
+        {weather && `Local time: ${localTime}`}
+      </div>
     </div>
   )
 }

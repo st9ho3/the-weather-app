@@ -11,6 +11,8 @@ import CurrentWeatherTop from '../components/CurrentWeatherTop'
 import Time from '../components/Time';
 import ChangeTemp from '../components/ChangeTemp';
 import MainView from '../components/MainView';
+import CurrentWeatherMid from '../components/CurrentWeatherMid';
+import CurrentWeatherIcon from '../components/CurrentWeatherIcon';
 
 export {
     Header,
@@ -25,5 +27,7 @@ export {
     CurrentWeatherTop,
     Time,
     ChangeTemp,
-    MainView
+    MainView,
+    CurrentWeatherMid,
+    CurrentWeatherIcon
 }

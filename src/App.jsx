@@ -24,8 +24,6 @@ const App = () => {
   const [error, setError] = useState(null);
   const [city, setCity] = useState(''); // Default city
 
-  console.log(weather)
-
   useEffect(() => {
     const fetchData = async () => {
       try {

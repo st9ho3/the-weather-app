@@ -1,6 +1,6 @@
 .currentWeather {
-    border: black solid thin;
-    width: 100%;
+/*     border: black solid thin;
+ */    width: 100%;
     height: 30%;
     display: flex;
     flex-direction: column;
@@ -10,15 +10,20 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 20%;
+    height: 30%;
     padding: 1rem;
 }
 .time {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     color: rgb(90, 88, 88);
+}
+.localtime {
+    font-size: 1rem;
+    color: rgb(158, 157, 157);
 }
 .changeTemp {
     color: rgb(90, 88, 88);
@@ -48,4 +53,14 @@
     align-items: center;
     opacity: .6;
     cursor: pointer;
+}
+.currentWeatherMid {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 2rem;
+    margin-top: .5rem;
+}
+.currentWeatherIcon {
+    width: 80px;    
 }
