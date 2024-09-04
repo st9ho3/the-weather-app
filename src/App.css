@@ -13,12 +13,8 @@ body, html {
   font-family: 'Poppins', sans-serif;  
 }
 .App{
-  display: grid;
-  grid-template-rows: auto 1fr; /* Two rows: auto height for header, 1fr for the rest */
-  grid-template-columns: 1fr 1fr; /* Two columns: equally split */
-  grid-template-areas: 
-      "header header"
-      "details forecast";
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -30,12 +26,11 @@ body, html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  grid-area: header;
 }
 .forecast {
   background-color: #ffffff;
-  height: 85vh;  /* Adjusted height for details and forecast */
-  width: 100%;
+  height: 85vh;  
+  width: 49%;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -46,8 +41,8 @@ body, html {
 }
 .details {
   background-color: #ffffff;
-  height: 85vh;  /* Adjusted height for details and forecast */
-  width: 95%;
+  height: 85vh;  
+  width: 49%;
   padding: 2rem;
   border-radius: 20px;
   display: flex;
@@ -55,4 +50,11 @@ body, html {
   align-items: center;
   grid-area: details;
   margin-top: 1rem;
+}
+.mainview {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  width: 100%;
+  min-width: 1160px;
 }

@@ -5,7 +5,6 @@ const HeaderDetails = () => {
   return (
     <div className='headerDetails'>
       <FaRegBell />
-
     </div>
   )
 }

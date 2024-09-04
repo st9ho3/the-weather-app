@@ -8,7 +8,8 @@ import {
   Location,
   DarkMode,
   HeaderDetails,
-  CurrentWeather
+  CurrentWeather,
+  MainView
 } from './constants/Components';
 import { fetchWeather, fetchForecast } from './utils/APIcall';
 
@@ -53,12 +54,15 @@ const App = () => {
         <DarkMode />
         <HeaderDetails />
       </Header>
-      <Details>
-        <CurrentWeather />
-      </Details>
-      <Forecast>
-        {/* Your Forecast component content here */}
-      </Forecast>
+      <MainView>
+        <Details>
+          <CurrentWeather />
+        </Details>
+        <Forecast>
+  
+        </Forecast>
+      </MainView>
+      
     </div>
   );
 };
