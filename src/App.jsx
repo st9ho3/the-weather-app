@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import {
   Header,
   Details,
@@ -12,6 +12,9 @@ import {
   MainView
 } from './constants/Components';
 import { fetchWeather, fetchForecast } from './utils/APIcall';
+
+const totalContext = createContext('')
+export {totalContext}
 
 
 const App = () => {
@@ -45,6 +48,7 @@ const App = () => {
 
   return (
     <div className="App">
+    <totalContext.Provider value = {{weather, forecast}}>
       <Header>
         <ImageLogo />
         <Location
@@ -62,6 +66,8 @@ const App = () => {
   
         </Forecast>
       </MainView>
+    </totalContext.Provider>
+    
       
     </div>
   );
