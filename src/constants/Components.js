@@ -13,6 +13,7 @@ import ChangeTemp from '../components/ChangeTemp';
 import MainView from '../components/MainView';
 import CurrentWeatherMid from '../components/CurrentWeatherMid';
 import CurrentWeatherIcon from '../components/CurrentWeatherIcon';
+import CurrentWeatherTemp from '../components/CurrentWeatherTemp';
 
 export {
     Header,
@@ -29,5 +30,6 @@ export {
     ChangeTemp,
     MainView,
     CurrentWeatherMid,
-    CurrentWeatherIcon
+    CurrentWeatherIcon,
+    CurrentWeatherTemp
 }

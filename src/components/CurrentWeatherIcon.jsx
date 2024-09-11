@@ -9,7 +9,7 @@ const CurrentWeatherIcon = () => {
         return weather.current.condition.text
     } 
     const text = getText().toLowerCase()  
-    console.log(text)
+    
 
     let imageSrc;
 
@@ -27,13 +27,16 @@ switch (text) {
   case 'snowy':
     imageSrc = './images/snow.png';
     break;
+  case 'moderate rain':
+    imageSrc = './images/cloudsnrain.png';
+    break;
   default:
     imageSrc = './images/default.png';
 }
 
   return (
     <div className=''>
-        <img className='currentWeatherIcon' src={imageSrc} alt="image-logo" />
+        <img className='currentWeatherIcon' src={imageSrc} alt={text} />
     </div>
   )
 }

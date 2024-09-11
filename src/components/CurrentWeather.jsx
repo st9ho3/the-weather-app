@@ -1,5 +1,5 @@
 import React from 'react'
-import {CurrentWeatherTop, Time, ChangeTemp, CurrentWeatherMid, CurrentWeatherIcon} from '../constants/Components';
+import {CurrentWeatherTop, Time, ChangeTemp, CurrentWeatherMid, CurrentWeatherIcon, CurrentWeatherTemp} from '../constants/Components';
 
 const CurrentWeather = () => {
   return (
@@ -10,6 +10,7 @@ const CurrentWeather = () => {
       </CurrentWeatherTop>
       <CurrentWeatherMid>
         <CurrentWeatherIcon />
+        <CurrentWeatherTemp />
       </CurrentWeatherMid>
     </div>
   )
