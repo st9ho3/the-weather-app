@@ -11,6 +11,7 @@ const SearchBar = ({ setCity }) => {
 
   const handleClick = () => {
     setCity(search);
+    setSearch('')
   };
 
   return (

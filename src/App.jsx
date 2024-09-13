@@ -23,6 +23,10 @@ const App = () => {
   const [forecast, setForecast] = useState(null);
   const [error, setError] = useState(null);
   const [city, setCity] = useState(''); // Default city
+  const [mode, setMode] = useState(false);
+  const changeMode = () => {
+    setMode(mode => !mode );
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -46,7 +50,7 @@ const App = () => {
 
   return (
     <div className="App">
-    <totalContext.Provider value = {{weather, forecast}}>
+    <totalContext.Provider value = {{weather, forecast, mode, changeMode}}>
       <Header>
         <ImageLogo />
         <Location
